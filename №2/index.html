@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+  <title>№2</title>
+</head>
+<body>
+  <header class="main-header header">
+    <div class="custom-container">
+      <div class="row-wrapper">
+        <nav class="header-nav">
+          <ul class="header-nav__list">
+            <li class="header-nav__item">
+              <a class="header__logo" href="#">
+                <img class="header__img"  width="128" height="60" src="img/header/logo.svg" alt="Логотип сайта.">
+              </a>
+            </li>
+            <li class="header-nav__item">
+              <form class="d-flex search-form" role="search">
+                <div class="search-form__wrapper">
+                  <input class="form-control search header__search" type="search" placeholder="Поиск..." aria-label="Search">
+                </div>
+                <div class="search-select search-select--close">
+                  <ul class="search-list">
+                    <li class="search-item">
+                      <div class="search-list__wrapper">
+                        <input class="form-control search search-list__input" type="search" value="Ананастасия" placeholder="Поиск..." aria-label="Search">
+                      </div>
+                    </li>
+                    <li class="search-item" >
+                      <img class="search-item__img" width="24" height="24" src="img/search-select/icon.jpg" alt="Ивлеева.">
+                      <button class="search-item__button">Ананастасия Ивлеева</button>
+                    </li>
+                    <li class="search-item" >
+                      <img class="search-item__img" width="24" height="24" src="img/search-select/icon-1.jpg" alt="Задорожная.">
+                      <button class="search-item__button">Анастасия Задорожная</button>
+                    </li>
+                    <li class="search-item" >
+                      <img class="search-item__img" width="24" height="24" src="img/search-select/icon-2.jpg" alt="Макеева.">
+                      <button class="search-item__button">Анастасия Макеева</button>
+                    </li>
+                  </ul>
+                </div>
+              </form>
+            </li>
+          </ul>
+        </nav>
+        <div class="auth-wrapper">
+          <a class="btn btn-primary header__button header__button--login" href="#" role="button">Вход</a>
+          <a class="btn btn-primary header__button header__button--sign" href="#" role="button">Регистрация</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+      <section class="catalog">
+        <h1 class="visually-hidden">Каталог</h1>
+        <div class="custom-container">
+          <section class="catalog-filters filters">
+            <h2 class="visually-hidden">Фильтры</h2>
+            <div class="row-wrapper">
+              <div class="filter-wrapper filter-wrapper__button">
+                <button class="filter filter-button" aria-label="Фильтры.">Фильтры</button>
+              </div>
+              <form class="d-flex search-form" role="search">
+                <div class="search-form__wrapper">
+                  <input class="form-control search filter__search" type="search" placeholder="Поиск..." aria-label="Search">
+                </div>
+              </form>
+              <div class="filter-wrapper filter-wrapper__sort">
+                <select class="filter filter-sort" aria-label="Сортировка.">
+                  <option value="filters">По умолчанию</option>
+                </select>
+              </div>
+            </div>
+          </section>
+          <ul class="catalog-list">
+            <li class="catalog-item">
+              <a class="catalog-picture-link" href="#">
+                <img class="catalog-picture" src="img/catalog-item/photo.jpg" width="200" height="222" alt="Ананастасия Ивлеева.">
+                <h3 class="item-title">Без слов</h3>
+              </a>
+              <div class="catalog-profile">
+                <a class="catalog-picture-link" href="#">
+                  <img class="catalog-icon" src="img/catalog-item/icon.jpg" width="48" height="48" alt="Ананастасия Ивлеева.">
+                </a>
+                <div class="catalog-profile__wrapper">
+                  <p class="catalog-profile__name">Настя Ивлеева Вячеславовна</p>
+                  <span class="catalog-profile__check">проверено</span>
+                </div>
+              </div>
+              <div class="catalog-container">
+                <p class="catalog-name">Редкость:</p>
+                <p class="catalog-rare">Уникальная</p>
+              </div>
+              <div class="catalog-container">
+                <p class="catalog-name">Цена:</p>
+                <p class="catalog-price">От 500 ₽</p>
+              </div>
+              <button class="catalog-button">Купить</button>
+            </li>
+            <li class="catalog-item">
+              <a class="catalog-picture-link" href="#">
+                <img class="catalog-picture" src="img/catalog-item/photo.jpg" width="200" height="222" alt="Ананастасия Ивлеева.">
+                <h3 class="item-title">Без слов</h3>
+              </a>
+              <div class="catalog-profile">
+                <a class="catalog-picture-link" href="#">
+                  <img class="catalog-icon" src="img/catalog-item/icon.jpg" width="48" height="48" alt="Ананастасия Ивлеева.">
+                </a>
+                <div class="catalog-profile__wrapper">
+                  <p class="catalog-profile__name">Настя Ивлеева Вячеславовна</p>
+                  <span class="catalog-profile__check">проверено</span>
+                </div>
+              </div>
+              <div class="catalog-container">
+                <p class="catalog-name">Редкость:</p>
+                <p class="catalog-rare">Уникальная</p>
+              </div>
+              <div class="catalog-container">
+                <p class="catalog-name">Цена:</p>
+                <p class="catalog-price">От 500 ₽</p>
+              </div>
+              <button class="catalog-button">Купить</button>
+            </li>
+            <li class="catalog-item">
+              <a class="catalog-picture-link" href="#">
+                <img class="catalog-picture" src="img/catalog-item/photo.jpg" width="200" height="222" alt="Ананастасия Ивлеева.">
+                <h3 class="item-title">Без слов</h3>
+              </a>
+              <div class="catalog-profile">
+                <a class="catalog-picture-link" href="#">
+                  <img class="catalog-icon" src="img/catalog-item/icon.jpg" width="48" height="48" alt="Ананастасия Ивлеева.">
+                </a>
+                <div class="catalog-profile__wrapper">
+                  <p class="catalog-profile__name">Настя Ивлеева Вячеславовна</p>
+                  <span class="catalog-profile__check">проверено</span>
+                </div>
+              </div>
+              <div class="catalog-container">
+                <p class="catalog-name">Редкость:</p>
+                <p class="catalog-rare">Уникальная</p>
+              </div>
+              <div class="catalog-container">
+                <p class="catalog-name">Цена:</p>
+                <p class="catalog-price">От 500 ₽</p>
+              </div>
+              <button class="catalog-button">Купить</button>
+            </li>
+            <li class="catalog-item">
+              <a class="catalog-picture-link" href="#">
+                <img class="catalog-picture" src="img/catalog-item/photo.jpg" width="200" height="222" alt="Ананастасия Ивлеева.">
+                <h3 class="item-title">Без слов</h3>
+              </a>
+              <div class="catalog-profile">
+                <a class="catalog-picture-link" href="#">
+                  <img class="catalog-icon" src="img/catalog-item/icon.jpg" width="48" height="48" alt="Ананастасия Ивлеева.">
+                </a>
+                <div class="catalog-profile__wrapper">
+                  <p class="catalog-profile__name">Настя Ивлеева Вячеславовна</p>
+                  <span class="catalog-profile__check">проверено</span>
+                </div>
+              </div>
+              <div class="catalog-container">
+                <p class="catalog-name">Редкость:</p>
+                <p class="catalog-rare">Уникальная</p>
+              </div>
+              <div class="catalog-container">
+                <p class="catalog-name">Цена:</p>
+                <p class="catalog-price">От 500 ₽</p>
+              </div>
+              <button class="catalog-button">Купить</button>
+            </li>
+            <li class="catalog-item">
+              <a class="catalog-picture-link" href="#">
+                <img class="catalog-picture" src="img/catalog-item/photo.jpg" width="200" height="222" alt="Ананастасия Ивлеева.">
+                <h3 class="item-title">Без слов</h3>
+              </a>
+              <div class="catalog-profile">
+                <a class="catalog-picture-link" href="#">
+                  <img class="catalog-icon" src="img/catalog-item/icon.jpg" width="48" height="48" alt="Ананастасия Ивлеева.">
+                </a>
+                <div class="catalog-profile__wrapper">
+                  <p class="catalog-profile__name">Настя Ивлеева Вячеславовна</p>
+                  <span class="catalog-profile__check">проверено</span>
+                </div>
+              </div>
+              <div class="catalog-container">
+                <p class="catalog-name">Редкость:</p>
+                <p class="catalog-rare">Уникальная</p>
+              </div>
+              <div class="catalog-container">
+                <p class="catalog-name">Цена:</p>
+                <p class="catalog-price">От 500 ₽</p>
+              </div>
+              <button class="catalog-button">Купить</button>
+            </li>
+            <li class="catalog-item">
+              <a class="catalog-picture-link" href="#">
+                <img class="catalog-picture" src="img/catalog-item/photo.jpg" width="200" height="222" alt="Ананастасия Ивлеева.">
+                <h3 class="item-title">Без слов</h3>
+              </a>
+              <div class="catalog-profile">
+                <a class="catalog-picture-link" href="#">
+                  <img class="catalog-icon" src="img/catalog-item/icon.jpg" width="48" height="48" alt="Ананастасия Ивлеева.">
+                </a>
+                <div class="catalog-profile__wrapper">
+                  <p class="catalog-profile__name">Настя Ивлеева Вячеславовна</p>
+                  <span class="catalog-profile__check">проверено</span>
+                </div>
+              </div>
+              <div class="catalog-container">
+                <p class="catalog-name">Редкость:</p>
+                <p class="catalog-rare">Уникальная</p>
+              </div>
+              <div class="catalog-container">
+                <p class="catalog-name">Цена:</p>
+                <p class="catalog-price">От 500 ₽</p>
+              </div>
+              <button class="catalog-button">Купить</button>
+            </li>
+            <li class="catalog-item">
+              <a class="catalog-picture-link" href="#">
+                <img class="catalog-picture" src="img/catalog-item/photo.jpg" width="200" height="222" alt="Ананастасия Ивлеева.">
+                <h3 class="item-title">Без слов</h3>
+              </a>
+              <div class="catalog-profile">
+                <a class="catalog-picture-link" href="#">
+                  <img class="catalog-icon" src="img/catalog-item/icon.jpg" width="48" height="48" alt="Ананастасия Ивлеева.">
+                </a>
+                <div class="catalog-profile__wrapper">
+                  <p class="catalog-profile__name">Настя Ивлеева Вячеславовна</p>
+                  <span class="catalog-profile__check">проверено</span>
+                </div>
+              </div>
+              <div class="catalog-container">
+                <p class="catalog-name">Редкость:</p>
+                <p class="catalog-rare">Уникальная</p>
+              </div>
+              <div class="catalog-container">
+                <p class="catalog-name">Цена:</p>
+                <p class="catalog-price">От 500 ₽</p>
+              </div>
+              <button class="catalog-button">Купить</button>
+            </li>
+            <li class="catalog-item">
+              <a class="catalog-picture-link" href="#">
+                <img class="catalog-picture" src="img/catalog-item/photo.jpg" width="200" height="222" alt="Ананастасия Ивлеева.">
+                <h3 class="item-title">Без слов</h3>
+              </a>
+              <div class="catalog-profile">
+                <a class="catalog-picture-link" href="#">
+                  <img class="catalog-icon" src="img/catalog-item/icon.jpg" width="48" height="48" alt="Ананастасия Ивлеева.">
+                </a>
+                <div class="catalog-profile__wrapper">
+                  <p class="catalog-profile__name">Настя Ивлеева Вячеславовна</p>
+                  <span class="catalog-profile__check">проверено</span>
+                </div>
+              </div>
+              <div class="catalog-container">
+                <p class="catalog-name">Редкость:</p>
+                <p class="catalog-rare">Уникальная</p>
+              </div>
+              <div class="catalog-container">
+                <p class="catalog-name">Цена:</p>
+                <p class="catalog-price">От 500 ₽</p>
+              </div>
+              <button class="catalog-button">Купить</button>
+            </li>
+            <li class="catalog-item">
+              <a class="catalog-picture-link" href="#">
+                <img class="catalog-picture" src="img/catalog-item/photo.jpg" width="200" height="222" alt="Ананастасия Ивлеева.">
+                <h3 class="item-title">Без слов</h3>
+              </a>
+              <div class="catalog-profile">
+                <a class="catalog-picture-link" href="#">
+                  <img class="catalog-icon" src="img/catalog-item/icon.jpg" width="48" height="48" alt="Ананастасия Ивлеева.">
+                </a>
+                <div class="catalog-profile__wrapper">
+                  <p class="catalog-profile__name">Настя Ивлеева Вячеславовна</p>
+                  <span class="catalog-profile__check">проверено</span>
+                </div>
+              </div>
+              <div class="catalog-container">
+                <p class="catalog-name">Редкость:</p>
+                <p class="catalog-rare">Уникальная</p>
+              </div>
+              <div class="catalog-container">
+                <p class="catalog-name">Цена:</p>
+                <p class="catalog-price">От 500 ₽</p>
+              </div>
+              <button class="catalog-button">Купить</button>
+            </li>
+            <li class="catalog-item">
+              <a class="catalog-picture-link" href="#">
+                <img class="catalog-picture" src="img/catalog-item/photo.jpg" width="200" height="222" alt="Ананастасия Ивлеева.">
+                <h3 class="item-title">Без слов</h3>
+              </a>
+              <div class="catalog-profile">
+                <a class="catalog-picture-link" href="#">
+                  <img class="catalog-icon" src="img/catalog-item/icon.jpg" width="48" height="48" alt="Ананастасия Ивлеева.">
+                </a>
+                <div class="catalog-profile__wrapper">
+                  <p class="catalog-profile__name">Настя Ивлеева Вячеславовна</p>
+                  <span class="catalog-profile__check">проверено</span>
+                </div>
+              </div>
+              <div class="catalog-container">
+                <p class="catalog-name">Редкость:</p>
+                <p class="catalog-rare">Уникальная</p>
+              </div>
+              <div class="catalog-container">
+                <p class="catalog-name">Цена:</p>
+                <p class="catalog-price">От 500 ₽</p>
+              </div>
+              <button class="catalog-button">Купить</button>
+            </li>
+            <li class="catalog-item">
+              <a class="catalog-picture-link" href="#">
+                <img class="catalog-picture" src="img/catalog-item/photo.jpg" width="200" height="222" alt="Ананастасия Ивлеева.">
+                <h3 class="item-title">Без слов</h3>
+              </a>
+              <div class="catalog-profile">
+                <a class="catalog-picture-link" href="#">
+                  <img class="catalog-icon" src="img/catalog-item/icon.jpg" width="48" height="48" alt="Ананастасия Ивлеева.">
+                </a>
+                <div class="catalog-profile__wrapper">
+                  <p class="catalog-profile__name">Настя Ивлеева Вячеславовна</p>
+                  <span class="catalog-profile__check">проверено</span>
+                </div>
+              </div>
+              <div class="catalog-container">
+                <p class="catalog-name">Редкость:</p>
+                <p class="catalog-rare">Уникальная</p>
+              </div>
+              <div class="catalog-container">
+                <p class="catalog-name">Цена:</p>
+                <p class="catalog-price">От 500 ₽</p>
+              </div>
+              <button class="catalog-button">Купить</button>
+            </li>
+            <li class="catalog-item">
+              <a class="catalog-picture-link" href="#">
+                <img class="catalog-picture" src="img/catalog-item/photo.jpg" width="200" height="222" alt="Ананастасия Ивлеева.">
+                <h3 class="item-title">Без слов</h3>
+              </a>
+              <div class="catalog-profile">
+                <a class="catalog-picture-link" href="#">
+                  <img class="catalog-icon" src="img/catalog-item/icon.jpg" width="48" height="48" alt="Ананастасия Ивлеева.">
+                </a>
+                <div class="catalog-profile__wrapper">
+                  <p class="catalog-profile__name">Настя Ивлеева Вячеславовна</p>
+                  <span class="catalog-profile__check">проверено</span>
+                </div>
+              </div>
+              <div class="catalog-container">
+                <p class="catalog-name">Редкость:</p>
+                <p class="catalog-rare">Уникальная</p>
+              </div>
+              <div class="catalog-container">
+                <p class="catalog-name">Цена:</p>
+                <p class="catalog-price">От 500 ₽</p>
+              </div>
+              <button class="catalog-button">Купить</button>
+            </li>
+            <li class="catalog-item">
+              <a class="catalog-picture-link" href="#">
+                <img class="catalog-picture" src="img/catalog-item/photo.jpg" width="200" height="222" alt="Ананастасия Ивлеева.">
+                <h3 class="item-title">Без слов</h3>
+              </a>
+              <div class="catalog-profile">
+                <a class="catalog-picture-link" href="#">
+                  <img class="catalog-icon" src="img/catalog-item/icon.jpg" width="48" height="48" alt="Ананастасия Ивлеева.">
+                </a>
+                <div class="catalog-profile__wrapper">
+                  <p class="catalog-profile__name">Настя Ивлеева Вячеславовна</p>
+                  <span class="catalog-profile__check">проверено</span>
+                </div>
+              </div>
+              <div class="catalog-container">
+                <p class="catalog-name">Редкость:</p>
+                <p class="catalog-rare">Уникальная</p>
+              </div>
+              <div class="catalog-container">
+                <p class="catalog-name">Цена:</p>
+                <p class="catalog-price">От 500 ₽</p>
+              </div>
+              <button class="catalog-button">Купить</button>
+            </li>
+            <li class="catalog-item">
+              <a class="catalog-picture-link" href="#">
+                <img class="catalog-picture" src="img/catalog-item/photo.jpg" width="200" height="222" alt="Ананастасия Ивлеева.">
+                <h3 class="item-title">Без слов</h3>
+              </a>
+              <div class="catalog-profile">
+                <a class="catalog-picture-link" href="#">
+                  <img class="catalog-icon" src="img/catalog-item/icon.jpg" width="48" height="48" alt="Ананастасия Ивлеева.">
+                </a>
+                <div class="catalog-profile__wrapper">
+                  <p class="catalog-profile__name">Настя Ивлеева Вячеславовна</p>
+                  <span class="catalog-profile__check">проверено</span>
+                </div>
+              </div>
+              <div class="catalog-container">
+                <p class="catalog-name">Редкость:</p>
+                <p class="catalog-rare">Уникальная</p>
+              </div>
+              <div class="catalog-container">
+                <p class="catalog-name">Цена:</p>
+                <p class="catalog-price">От 500 ₽</p>
+              </div>
+              <button class="catalog-button">Купить</button>
+            </li>
+            <li class="catalog-item">
+              <a class="catalog-picture-link" href="#">
+                <img class="catalog-picture" src="img/catalog-item/photo.jpg" width="200" height="222" alt="Ананастасия Ивлеева.">
+                <h3 class="item-title">Без слов</h3>
+              </a>
+              <div class="catalog-profile">
+                <a class="catalog-picture-link" href="#">
+                  <img class="catalog-icon" src="img/catalog-item/icon.jpg" width="48" height="48" alt="Ананастасия Ивлеева.">
+                </a>
+                <div class="catalog-profile__wrapper">
+                  <p class="catalog-profile__name">Настя Ивлеева Вячеславовна</p>
+                  <span class="catalog-profile__check">проверено</span>
+                </div>
+              </div>
+              <div class="catalog-container">
+                <p class="catalog-name">Редкость:</p>
+                <p class="catalog-rare">Уникальная</p>
+              </div>
+              <div class="catalog-container">
+                <p class="catalog-name">Цена:</p>
+                <p class="catalog-price">От 500 ₽</p>
+              </div>
+              <button class="catalog-button">Купить</button>
+            </li>
+            <li class="catalog-item">
+              <a class="catalog-picture-link" href="#">
+                <img class="catalog-picture" src="img/catalog-item/photo.jpg" width="200" height="222" alt="Ананастасия Ивлеева.">
+                <h3 class="item-title">Без слов</h3>
+              </a>
+              <div class="catalog-profile">
+                <a class="catalog-picture-link" href="#">
+                  <img class="catalog-icon" src="img/catalog-item/icon.jpg" width="48" height="48" alt="Ананастасия Ивлеева.">
+                </a>
+                <div class="catalog-profile__wrapper">
+                  <p class="catalog-profile__name">Настя Ивлеева Вячеславовна</p>
+                  <span class="catalog-profile__check">проверено</span>
+                </div>
+              </div>
+              <div class="catalog-container">
+                <p class="catalog-name">Редкость:</p>
+                <p class="catalog-rare">Уникальная</p>
+              </div>
+              <div class="catalog-container">
+                <p class="catalog-name">Цена:</p>
+                <p class="catalog-price">От 500 ₽</p>
+              </div>
+              <button class="catalog-button">Купить</button>
+            </li>
+            <li class="catalog-item">
+              <a class="catalog-picture-link" href="#">
+                <img class="catalog-picture" src="img/catalog-item/photo.jpg" width="200" height="222" alt="Ананастасия Ивлеева.">
+                <h3 class="item-title">Без слов</h3>
+              </a>
+              <div class="catalog-profile">
+                <a class="catalog-picture-link" href="#">
+                  <img class="catalog-icon" src="img/catalog-item/icon.jpg" width="48" height="48" alt="Ананастасия Ивлеева.">
+                </a>
+                <div class="catalog-profile__wrapper">
+                  <p class="catalog-profile__name">Настя Ивлеева Вячеславовна</p>
+                  <span class="catalog-profile__check">проверено</span>
+                </div>
+              </div>
+              <div class="catalog-container">
+                <p class="catalog-name">Редкость:</p>
+                <p class="catalog-rare">Уникальная</p>
+              </div>
+              <div class="catalog-container">
+                <p class="catalog-name">Цена:</p>
+                <p class="catalog-price">От 500 ₽</p>
+              </div>
+              <button class="catalog-button">Купить</button>
+            </li>
+            <li class="catalog-item">
+              <a class="catalog-picture-link" href="#">
+                <img class="catalog-picture" src="img/catalog-item/photo.jpg" width="200" height="222" alt="Ананастасия Ивлеева.">
+                <h3 class="item-title">Без слов</h3>
+              </a>
+              <div class="catalog-profile">
+                <a class="catalog-picture-link" href="#">
+                  <img class="catalog-icon" src="img/catalog-item/icon.jpg" width="48" height="48" alt="Ананастасия Ивлеева.">
+                </a>
+                <div class="catalog-profile__wrapper">
+                  <p class="catalog-profile__name">Настя Ивлеева Вячеславовна</p>
+                  <span class="catalog-profile__check">проверено</span>
+                </div>
+              </div>
+              <div class="catalog-container">
+                <p class="catalog-name">Редкость:</p>
+                <p class="catalog-rare">Уникальная</p>
+              </div>
+              <div class="catalog-container">
+                <p class="catalog-name">Цена:</p>
+                <p class="catalog-price">От 500 ₽</p>
+              </div>
+              <button class="catalog-button">Купить</button>
+            </li>
+          </ul>
+          <nav class="pagination-nav" aria-label="...">
+            <ul class="pagination">
+              <li class="page-item disabled">
+                <a class="page-link">&laquo;</a>
+              </li>
+              <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">4</a></li>
+              <li class="page-item"><a class="page-link" href="#">5</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#">&raquo;</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+  </main>
+  <footer class="main-footer footer">
+    <div class="custom-container">
+      <nav class="footer-nav">
+        <ul class="footer-list">
+          <li class="footer-list__element">
+            <h3 class="element__title">NFT</h3>
+            <ul class="element__body">
+              <li class="element__item"><a class="element__item-link" href="#">Что такое NFT</a></li>
+              <li class="element__item"><a class="element__item-link" href="#">Создайте NFT <br> с нами</a></li>
+              <li class="element__item">
+                <ul class="footer-social social">
+                  <li class="social__element">
+                    <a class="social-link" href="#">
+                      <img class="social-img" width="20" height="20" src="img/footer/twitter.svg" alt="Наш Твиттер.">
+                    </a>
+                  </li>
+                  <li class="social__element">
+                    <a class="social-link" href="#">
+                      <img class="social-img" width="20" height="20" src="img/footer/vk.svg" alt="Наш Вконтакте.">
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="footer-list__element">
+              <h3 class="element__title">Компания</h3>
+              <ul class="element__body">
+                  <li class="element__item"><a class="element__item-link" href="#">О нас</a></li>
+                  <li class="element__item"><a class="element__item-link" href="#">Отправить запрос</a></li>
+              </ul>
+          </li>
+          <li class="footer-list__element">
+            <h3 class="element__title">Другое</h3>
+            <ul class="element__body">
+                <li class="element__item"><a class="element__item-link" href="#">Условия использования</a></li>
+                <li class="element__item"><a class="element__item-link" href="#">Политика конфиденциальности</a></li>
+            </ul>
+        </li>
+      </ul>
+      </nav>
+      <span class="footer__copyright">@ tnft.ru Company, Inc</span>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
