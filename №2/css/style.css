@@ -277,11 +277,11 @@ input {
   position: relative;
 }
 
-.filter-wrapper__button {
+.filter-wrapper-button {
   margin-top: -4px; /*Подгон*/
 }
 
-.filter-wrapper__button::after {
+.filter-wrapper-button::after {
   content: '';
   position: absolute;
   top: 50%;
@@ -295,7 +295,7 @@ input {
   transform: translateY(-34%); /*Подгон*/
 }
 
-.filter-wrapper__sort::after {
+.filter-wrapper-sort::after {
   content: '';
   position: absolute;
   top: 50%;
@@ -309,7 +309,7 @@ input {
   transform: translateY(-50%); /*Подгон*/
 }
 
-.filter__search {
+.filter-search {
   min-width: 326px;
 }
 
